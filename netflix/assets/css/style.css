@@ -1,0 +1,570 @@
+ /* ----------- Formatação -----------  */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --color-ligth: rgb(255,255,255);
+    --color-dark: rgb(0,0,0);
+    --color-buttom: rgb(229, 9, 20);
+    --border-color: #222;
+    --quest-color: rgb(48,48,48);
+    --gradient-black: linear-gradient(rgba(0,0,0,0.9), rgba(0,0,0,0.4), rgba(0,0,0,0.9));
+    --background-select-lang: rgb(94, 90, 90);
+
+}
+
+html {
+    font-family: Arial, sans-serif;
+    letter-spacing: 0.5px;
+    font-size: 62.5%;
+}
+body{
+    /* width: 100vw; */
+    background-color: var(--color-dark);
+    color: var(--color-ligth);
+}
+
+ /* ------------ Estilo dos titulos e paragrafos --------- */
+
+h1{ 
+    font-size:5rem;
+}
+h2{
+    font-size:2.7rem;
+    margin: 2rem 0;
+    font-weight: 300;
+}
+p{
+    font-size: 1.8rem;
+    margin-bottom: 2rem;
+}
+
+/* --------------- Estilização da Main ------------ */
+
+.main{
+    width: 100%;
+    height: 70rem;
+    background-image: var(--gradient-black), url(../images/background.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+/* Navegação */
+
+.cabecalho nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 3rem 5rem;
+    width: 100%;
+    height: 10rem;
+
+}
+.netflix-logo svg{
+    width: 13rem;
+    height: 5rem;
+}
+.nav-buttons{
+    display: flex;
+    height: 3.5rem;
+}
+.nav-buttons select{
+    padding: .5rem;
+    background-color: transparent;
+    color: var(--color-ligth);
+    border: 1px solid var(--color-ligth);
+    border-radius: 5px;
+    font-size: 1.5rem;
+    margin-right: 3rem;
+}
+
+.nav-buttons select option{
+    background-color: var(--background-select-lang);
+}
+
+.nav-buttons button{
+    color: var(--color-ligth);
+    background-color: var(--color-buttom);
+    border: none;
+    border-radius: 5px;
+    font-size: 1.7rem;
+    width: 8rem;
+    text-align: center;
+}
+
+/* Conteudo da main */
+
+.content-main{
+ display: flex;
+ flex-direction: column;
+ text-align: center;
+ max-width: 75rem;
+ margin: 12rem auto;
+ align-items: center;
+ padding: 2rem;
+
+}
+/* ---------------- FORMULARIO -----------------------------*/
+
+.form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.input-form{
+    position: relative;
+    display: flex;
+    width: 90%;
+}
+
+
+.input-form label{
+    display: flex;
+    position: relative;
+    width: 70%;
+    align-items: center;
+}
+
+.input-form label span{
+    position: absolute;
+    font-size: 1.8rem;
+    color: var(--background-select-lang);
+    margin-left: 1rem;
+    cursor: text;
+    transition: all 0.2s ease-in-out;
+}
+
+
+.input-email{
+    width: 100%;
+    height: 6rem;
+    padding: 1rem;
+    font-size: 1.6rem;
+    outline: none;
+}
+
+.input-form button{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: var(--color-buttom);
+    color: var(--color-ligth);
+    width: 30%;
+    height: 6rem;
+    font-size: 2.5em;
+    border: none;
+    padding: 0 2rem;
+    cursor: pointer;
+}
+.input-form button svg{
+    width: 24px;
+    height: 24px;
+    margin-left: 1rem;
+
+}
+
+
+/* --------"placeholder dinamico" adcionadas no Script--------- */
+
+.span-active{
+    font-size: 1.5rem !important;
+    top: 0.5rem;
+}
+
+.error-text{
+    position: absolute;
+    display: block;
+    color: yellow;
+    top: 7rem;
+
+}
+/* --------------------- */
+/* --------------- template cards ----------------*/
+
+.card{
+    position: relative;
+    display: flex;
+    border-top: 8px solid var(--border-color);
+    justify-content: center;
+    align-items: center;
+    height: max-content;
+    width: 100%;
+    padding: 7rem 7rem;
+}
+
+
+.card-titles{
+    max-width: 58rem;
+    z-index: 3;
+}
+
+
+.card-media{
+    position: relative;
+    max-width: 60rem;
+    min-width: 35rem;
+    overflow: hidden;
+}
+
+.card-media img{
+    position: relative;
+    width: 100%;
+    z-index: 1;
+}
+
+.ml{
+    margin-left: 5rem;
+}
+
+/* -------------- primeiro card ------------- */
+
+
+.video-tv{
+    position: absolute;
+    width: 73.5%;
+    left: 13%;
+    top: 20%;
+}
+
+/* --------------- Segundo card ---------------- */
+.cellphone{
+    display: flex;
+    margin: -4rem 0 0 -10rem;
+    justify-content: center;
+}
+
+.download{
+    position: absolute;
+    display: flex;
+    width: 60%;
+    background-color: var(--color-dark);
+    border-radius: 10px;
+    border: 2px solid rgba(255, 255, 255, 0.25);
+    z-index: 2; 
+    bottom: 3.5rem;
+    padding: 1rem;
+    align-items: center;
+}
+.download img{
+    max-width: 5rem;
+}
+.download span{
+    max-width: 10.5rem;
+    font-size: 1.6rem;
+    margin-left: 2rem;
+    line-height: 20px;
+}
+
+.download:after{
+    content: "";
+    position: absolute;
+    background-image: url(../images/gif-mobile.gif);
+    background-size: cover;
+    width: 5rem;
+    height: 5rem;
+    align-self: center;
+    right: 1rem;
+}
+
+/* ----------------- Terceiro card ------------------  */
+
+.video-devices{
+    position: absolute;
+    width: 62%;
+    right: 20%;
+    top: 10%;
+}
+
+/* ---------------- questionario -------------------- */
+
+.questions{
+    max-width: 70rem;
+    text-align: center;
+
+}
+
+.card-questions{
+    display: flex;
+   justify-content:  center;
+}
+
+.questions ul{
+    list-style: none;
+    margin: 5rem 0;
+}
+
+.quest{
+    margin-bottom: 1rem;
+}
+
+.quest button{
+    display: flex;
+    width: 100%;
+    background-color: var(--quest-color);
+    color: var(--color-ligth);
+    font-size: 2.5rem;
+    padding: 2rem 3rem;
+    justify-content: space-between;
+    align-items: center;
+    border: 1px solid var(--quest-color);
+    margin-bottom: 1px;
+    cursor: pointer;
+}
+
+.quest button > svg{
+    fill: var(--color-ligth);
+    height: 2.5rem;
+    transform: rotate(45deg);
+    transition: 0.2s linear;
+}
+
+.answer{
+    display: none;
+    width: 100%;
+    text-align: left;
+    padding: 3rem 3rem 1rem;
+    background-color: var(--quest-color);
+    transition: 9s ;
+
+}
+
+.answer p{
+    font-size: 2.5rem;
+}
+
+/* EFEITO DE CLICK NOS BOTÕES */
+
+.quest button:focus > svg {
+    transform: rotate(90deg);
+    fill: var(--color-ligth);
+    height: 2.5rem;
+
+}
+
+.quest button:focus + .answer{
+    display: block;
+}
+
+
+/* FOOTER  */
+
+.footer{
+    display: flex;
+    justify-content: space-around;
+
+}
+
+.footer-info{
+    text-align: center;
+}
+
+.footer-info span{
+    font-size: 3rem;
+}
+
+.footer-info p{
+    margin-top: 2rem;
+}
+
+.footer-info p a{
+    text-decoration: none;
+}
+
+.netflix-footer{
+    width: 5rem;
+    height: 1.5rem;
+}
+
+/* REDES SOCIAIS */
+
+.redes span{
+    font-size: 2rem;
+}
+
+
+.redes ul{
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    margin-top: 2rem;
+}
+
+.redes ul li a img{
+    width: 30px;
+    height: 30px;
+}
+
+
+.github{
+    position: relative;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: var(--color-ligth);
+    float: left;
+    margin-left: 2rem;
+}
+
+.github a img{
+    position: absolute;
+    top: 3px;
+}
+
+
+
+/* ---------MEDIA QUERIES----------- */
+
+@media(max-width:950px){
+    .card{
+        padding: 7rem 5 rem;
+    }
+    .content-main{
+        margin-top: 8rem;
+    }  
+
+    .form p{
+        font-size: 1.6rem;    
+    }
+
+    .input-form{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .input-email{
+        width: 100%;
+        margin-bottom: 2rem;
+    }
+    
+    .input-form button{
+        /* position: relative; */
+        width: 12rem;
+        height: 4rem;
+        font-size: 1.4rem;
+        margin-top: 4rem;
+    }
+    .input-form button svg{
+        width: 12px;
+        height: 12px;
+    }
+
+    .card{
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .column-reverse{
+        flex-direction: column-reverse;
+    }
+
+    .cellphone{
+        margin: 0 auto;
+    }
+
+    .download{
+        max-height: 7rem;
+    }
+    .download img{
+        max-width: 4rem;
+    }
+    .download span{
+        font-size: 1.4rem;
+    }
+
+    .card-media{
+        min-width:auto;
+    }
+
+    .ml{
+        margin-left: 0;
+    }
+
+    .footer-info span{
+        display: block;
+    }
+
+    .github a img{
+        left: 0;
+    }
+}
+
+@media(max-width:795px){
+
+    h1{ 
+        font-size:4rem;
+    }
+    h2{
+        font-size:2.5rem;
+    }
+    p{
+        font-size: 1.5rem;
+    }
+    .content-main{
+        max-width: 60rem;
+       
+    } 
+    .quest button{
+        font-size: 1.6rem;
+        padding: 1.5rem 3rem;
+    }
+    
+    .quest button > svg{
+        height: 1.6rem;
+    }
+  
+    .answer p{
+        font-size: 1.6rem;
+    }
+    
+}
+
+@media (max-width:562px){
+    h1{ 
+        font-size:3rem;
+    }
+    h2{
+        font-size:1.5rem;
+    }
+
+    .netflix-logo svg{
+        width: 8rem;
+    }
+    .nav-buttons{
+        display: flex;
+        height: 2.5rem;
+    }
+    .nav-buttons select{
+        padding: .2rem;
+        font-size: 1.2rem;
+        margin-right: 1.5rem;
+    }
+    
+    .nav-buttons button{
+        font-size: 1.2rem;
+        width: 5rem;
+    }
+    
+    .content-main{
+        max-width: 50rem;
+       
+    }
+    .download{
+        min-width: 23rem;
+    }
+
+
+
+}
+
+@media (max-width:501px){
+
+    .questions{
+       width: 100vw;
+    }
+
+}

@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <title>Netflix clone</title>
+</head>
+<body>
+    
+<!-- MAIN  -->
+
+    <section class="netflix-page">
+        <div class="main">
+            <header class="cabecalho">
+                <nav>
+                    <div class="netflix-logo">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="1024" height="276.742" viewBox="0 0 1024 276.742">
+                            <path d="M140.803 258.904c-15.404 2.705-31.079 3.516-47.294 5.676l-49.458-144.856v151.073c-15.404 1.621-29.457 3.783-44.051 5.945v-276.742h41.08l56.212 157.021v-157.021h43.511v258.904zm85.131-157.558c16.757 0 42.431-.811 57.835-.811v43.24c-19.189 0-41.619 0-57.835.811v64.322c25.405-1.621 50.809-3.785 76.482-4.596v41.617l-119.724 9.461v-255.39h119.724v43.241h-76.482v58.105zm237.284-58.104h-44.862v198.908c-14.594 0-29.188 0-43.239.539v-199.447h-44.862v-43.242h132.965l-.002 43.242zm70.266 55.132h59.187v43.24h-59.187v98.104h-42.433v-239.718h120.808v43.241h-78.375v55.133zm148.641 103.507c24.594.539 49.456 2.434 73.51 3.783v42.701c-38.646-2.434-77.293-4.863-116.75-5.676v-242.689h43.24v201.881zm109.994 49.457c13.783.812 28.377 1.623 42.43 3.242v-254.58h-42.43v251.338zm231.881-251.338l-54.863 131.615 54.863 145.127c-16.217-2.162-32.432-5.135-48.648-7.838l-31.078-79.994-31.617 73.51c-15.678-2.705-30.812-3.516-46.484-5.678l55.672-126.75-50.269-129.992h46.482l28.377 72.699 30.27-72.699h47.295z" fill="#e50914"/>
+                        </svg>
+                    </div>
+                    <div class="nav-buttons">
+                        <select name="select-language" id="select-language">
+                            <option value="Português">Português</option>
+                            <option value="English">English</option>
+                        </select>
+                        <button class="sing-in">Entrar</button>
+                    </div>
+                </nav>
+            </header>
+            <div class="content-main">
+                    <div class="titles">
+                        <h1>Filmes, séries e muito mais. Sem limites.</h1>
+                        <h2>Assista onde quiser. Cancele quando quiser.</h2>
+                    </div>
+                    <form action="/" method="GET" class="form">
+                        <p>Pronto para assistir? Informe seu email para criar ou reiniciar sua assinatura.</p>
+                        <div class="input-form">
+                            <label>
+                                <span>Email</span>
+                                <input class="input-email" type="email" name="" id="">
+                            </label>
+                            <button class="button-form"><spam>Vamos lá</spam><svg viewBox="0 0 6 12" xmlns="http://www.w3.org/2000/svg" ><path d="M.61 1.312l.78-.624L5.64 6l-4.25 5.312-.78-.624L4.36 6z" fill="#fff" fill-rule="evenodd"/></svg></button>
+                        </div>
+                    </form> 
+            </div>
+        </div>
+
+<!-- PRIMEIRO CARD  -->
+
+        <div class="card">
+            <div class="card-titles">
+                <h1>Aproveite na TV.</h1>
+                <h2>Assista em Smart TVs, PlayStation, Xbox, Chromecast, Apple TV, aparelhos de Blu-ray e outros dispositivos.</h2>
+            </div>
+            <div class="card-media ml">
+                <img class="device-tv"src="./assets/images/img-page2.png" alt="device-tv" srcset="">
+                <video class="video-tv"src="./assets/videos/video-tv-0819.m4v" autoplay playsinline muted loop></video>
+            </div>
+        </div>
+
+<!-- SEGUNDO CARD  -->
+
+        <div class="card  column-reverse"">
+            <div class="card-media cellphone">
+                <img class="device-mobile"src="./assets/images/mobile-0819.jpg" alt="device-mobile" srcset="">
+                <div class="download">
+                    <img src="./assets/images/img-mobile.png" alt="">
+                    <span>Download em andamento...</span>
+                </div>
+            </div>
+            <div class="card-titles ml">
+                <h1>Baixe séries para assistir offline.</h1>
+                <h2>Salve seus títulos favoritos e sempre tenha algo para assistir.</h2>
+            </div>
+        </div>
+
+<!-- TERCEIRO CARD  -->
+
+        <div class="card">
+            <div class="card-titles">
+                <h1>Assista quando quiser.</h1>
+                <h2>Assista no celular, tablet, Smart TV ou notebook sem pagar a mais por isso.</h2>
+            </div>
+            <div class="card-media ml">
+                <img class="all-devices" src="./assets/images/device-pile.png" alt="all-devices" srcset="">
+                <video class="video-devices" src="./assets/videos/video-devices.m4v" autoplay playsinline muted loop></video>
+            </div>
+        </div>
+
+<!-- QUARTO CARD  -->
+
+        <div class="card column-reverse">
+            <div class="card-media">
+                <img class="kids"src="./assets/images/kidsValueProp.png" alt="netflix-kids" srcset="">
+            </div>
+            <div class="card-titles ml">
+                <h1>Crie perfis para crianças.</h1>
+                <h2>Deixe as crianças se aventurarem com seus personagens favoritos em um espaço feito só para elas, sem pagar a mais por isso.</h2>
+            </div>
+        </div>
+
+<!-- QUESTIONARIO -->
+
+        <div class="card card-questions">
+            <div class="questions">
+                <h1>Perguntas frequentes</h1>
+                <ul>
+                    <li class="quest">
+                        <button>
+                            <spam>O que é Netflix?</spam>
+                            <svg id="thin-x" viewBox="0 0 26 26" class="svg-icon svg-icon-thin-x svg-closed" focusable="true">
+                                <path d="M10.5 9.3L1.8 0.5 0.5 1.8 9.3 10.5 0.5 19.3 1.8 20.5 10.5 11.8 19.3 20.5 20.5 19.3 11.8 10.5 20.5 1.8 19.3 0.5 10.5 9.3Z">
+                            </svg>
+                        </button>
+                    <div class="answer">
+                        <p> A Netflix é um serviço de transmissão online que oferece uma ampla variedade de séries, filmes e documentários premiados em milhares de aparelhos conectados à internet.</p>
+                        <p> Você pode assistir a quantos filmes e séries quiser, quando e onde quiser, sem comerciais – tudo por um preço mensal bem acessível. Aqui você sempre encontra novidades. A cada semana, adicionamos novas séries e filmes.</p>
+                        
+                    </div>
+                    </li>
+                    <li class="quest">
+                        <button>
+                            <spam>Quanto custa a Netflix?</spam>
+                            <svg id="thin-x" viewBox="0 0 26 26" class="svg-icon svg-icon-thin-x svg-closed" focusable="true">
+                                <path d="M10.5 9.3L1.8 0.5 0.5 1.8 9.3 10.5 0.5 19.3 1.8 20.5 10.5 11.8 19.3 20.5 20.5 19.3 11.8 10.5 20.5 1.8 19.3 0.5 10.5 9.3Z"></path>
+                            </svg>
+                        </button>
+                        <div class="answer">
+                            <p>
+                                Assista à Netflix no seu celular, tablet, Smart TV, notebook ou aparelho de streaming por uma taxa mensal única. Os planos variam de R$25,90 a R$55,90 por mês. Sem contrato nem taxas extras.
+                            </p>
+                        </div>
+                    </li>
+                    <li class="quest">
+                        <button>
+                            <spam>Onde posso assistir?</spam>
+                            <svg id="thin-x" viewBox="0 0 26 26" class="svg-icon svg-icon-thin-x svg-closed" focusable="true">
+                                <path d="M10.5 9.3L1.8 0.5 0.5 1.8 9.3 10.5 0.5 19.3 1.8 20.5 10.5 11.8 19.3 20.5 20.5 19.3 11.8 10.5 20.5 1.8 19.3 0.5 10.5 9.3Z"></path>
+                            </svg>
+                        </button>
+                        <div class="answer">
+                            <p>Assista onde quiser, quando quiser. Faça login com sua conta Netflix em netflix.com para começar a assistir no computador ou em qualquer aparelho conectado à Internet compatível com o aplicativo Netflix, como Smart TVs, smartphones, tablets, aparelhos de streaming e videogames.</p>
+                            <p>Você também pode baixar a sua série favorita com o aplicativo Netflix para iOS, Android ou Windows 10. Use downloads para levar a Netflix para onde quiser sem precisar de conexão com a Internet. Leve a Netflix com você para qualquer lugar.</p>
+                        </div>
+                    </li>
+                    <li class="quest">
+                        <button>
+                            <spam>Como faço para cancelar?</spam>
+                            <svg id="thin-x" viewBox="0 0 26 26" class="svg-icon svg-icon-thin-x svg-closed" focusable="true">
+                                <path d="M10.5 9.3L1.8 0.5 0.5 1.8 9.3 10.5 0.5 19.3 1.8 20.5 10.5 11.8 19.3 20.5 20.5 19.3 11.8 10.5 20.5 1.8 19.3 0.5 10.5 9.3Z"></path>
+                            </svg>
+                        </button>
+                        <div class="answer">
+                            <p>
+                                A Netflix é flexível. Não há contratos nem compromissos. Você pode cancelar a sua conta na internet com apenas dois cliques. Não há taxa de cancelamento – você pode começar ou encerrar a sua assinatura a qualquer momento.
+                            </p>
+                        </div>
+                    </li>
+                    <li class="quest">
+                        <button>
+                            <spam>O que eu posso assistir na Netflix?</spam>
+                            <svg id="thin-x" viewBox="0 0 26 26" class="svg-icon svg-icon-thin-x svg-closed" focusable="true">
+                                <path d="M10.5 9.3L1.8 0.5 0.5 1.8 9.3 10.5 0.5 19.3 1.8 20.5 10.5 11.8 19.3 20.5 20.5 19.3 11.8 10.5 20.5 1.8 19.3 0.5 10.5 9.3Z"></path>
+                            </svg>
+                        </button>
+                        <div class="answer">
+                            <p>
+                                A Netflix tem um grande catálogo de filmes, documentários, séries, originais Netflix premiados e muito mais. Assista o quanto quiser, quando quiser.
+                            </p>
+                        </div>
+                    </li>
+                    <li class="quest">
+                        <button>
+                            <spam>A Netflix é adequada para crianças?</spam>
+                            <svg id="thin-x" viewBox="0 0 26 26" class="svg-icon svg-icon-thin-x svg-closed" focusable="true">
+                                <path d="M10.5 9.3L1.8 0.5 0.5 1.8 9.3 10.5 0.5 19.3 1.8 20.5 10.5 11.8 19.3 20.5 20.5 19.3 11.8 10.5 20.5 1.8 19.3 0.5 10.5 9.3Z"></path>
+                            </svg>
+                        </button>
+                        <div class="answer">
+                            <p>A experiência infantil da Netflix faz parte da sua assinatura para que as crianças se divirtam em seu próprio espaço com séries e filmes familiares sob a supervisão dos responsáveis.</p>
+                            <p>O recurso de controle parental, incluso nos perfis para crianças e protegido por PIN, permite restringir a classificação etária do conteúdo que as crianças podem ver e bloquear títulos específicos que você não quer que elas assistam.</p>
+                            </span>
+                        </div>
+                    </li>
+                </ul>
+                <form action="/" method="GET" class="form">
+                    <p>Pronto para assistir? Informe seu email para criar ou reiniciar sua assinatura.</p>
+                    <div class="input-form">
+                        <label>
+                            <span>Email</span>
+                            <input class="input-email" type="email" name="" id="">
+                        </label>
+                        <button><spam>Vamos lá</spam><svg viewBox="0 0 6 12" xmlns="http://www.w3.org/2000/svg" ><path d="M.61 1.312l.78-.624L5.64 6l-4.25 5.312-.78-.624L4.36 6z" fill="#fff" fill-rule="evenodd"/></svg></button>
+                    </div>
+            </form>
+            </div>
+        </div>
+
+<!-- FOOTER  -->
+
+        <footer class="card footer">
+            <div class="footer-info">
+                <span>Feito por:</span> <span> Flavio Gomes Pinheiro!</span>
+                <p>Esta é uma réplica do site da
+                     <a href="https://www.netflix.com/br/" target="_blank">
+                        <svg class="netflix-footer" xmlns="http://www.w3.org/2000/svg" width="1024" height="276.742" viewBox="0 0 1024 276.742">
+                            <path d="M140.803 258.904c-15.404 2.705-31.079 3.516-47.294 5.676l-49.458-144.856v151.073c-15.404 1.621-29.457 3.783-44.051 5.945v-276.742h41.08l56.212 157.021v-157.021h43.511v258.904zm85.131-157.558c16.757 0 42.431-.811 57.835-.811v43.24c-19.189 0-41.619 0-57.835.811v64.322c25.405-1.621 50.809-3.785 76.482-4.596v41.617l-119.724 9.461v-255.39h119.724v43.241h-76.482v58.105zm237.284-58.104h-44.862v198.908c-14.594 0-29.188 0-43.239.539v-199.447h-44.862v-43.242h132.965l-.002 43.242zm70.266 55.132h59.187v43.24h-59.187v98.104h-42.433v-239.718h120.808v43.241h-78.375v55.133zm148.641 103.507c24.594.539 49.456 2.434 73.51 3.783v42.701c-38.646-2.434-77.293-4.863-116.75-5.676v-242.689h43.24v201.881zm109.994 49.457c13.783.812 28.377 1.623 42.43 3.242v-254.58h-42.43v251.338zm231.881-251.338l-54.863 131.615 54.863 145.127c-16.217-2.162-32.432-5.135-48.648-7.838l-31.078-79.994-31.617 73.51c-15.678-2.705-30.812-3.516-46.484-5.678l55.672-126.75-50.269-129.992h46.482l28.377 72.699 30.27-72.699h47.295z" fill="#e50914"/>
+                        </svg>
+                     </a> 
+                   feita com o único intuito de aprendizagem  
+                    </p>
+            </div>
+            <div class="redes">
+                <span>Redes Sociais:</span>
+                <ul>
+                    <li class="linkedin"><a href="https://www.linkedin.com/in/flavio-gomes-140b45163/" target="_blank"><img src="./assets/images/linkedin.png" alt="meuLinkedin"></a></li>
+                    <li class="github"><a href="https://github.com/FlavioGP" target="_blank"><img src="./assets/images/github.png" alt="meuGithub"></a></li>
+                </ul>
+            </div>
+        </footer>
+    </section>
+
+    <script src="./assets/scripts/placeholderForm.js"></script>
+    <script src="./assets/scripts/validForm.js"></script>
+</body>
+</html>
