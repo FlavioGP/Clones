@@ -1,11 +1,3 @@
-<style>
-    .header-netflix{
-        display:flex;
-        justify-content: center;
-        margin-top: 100px;    
-    }
-</style>
-
 
 <h1>Clones</h1>
 
