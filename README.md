@@ -1,7 +1,10 @@
+<<<<<<< HEAD
 # Clones
 
 ### repositório criado para armazenamento de clones de sites
 
+=======
+>>>>>>> c50b66a89e92e5e3f9006abec3ea0fc9be450359
 
 
 ---
