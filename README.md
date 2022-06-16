@@ -3,7 +3,7 @@
 
 ### repositório criado para armazenamento de clones de sites
 ---
-![Logo Netflix](C:\Users\Flavio Gomes\Desktop\clones\readme\netflix Logo.png)
+![Logo Netflix](C:\Users\Flavio Gomes\Desktop\clones\readme\netflix-logo.png)
 
 ### :computer: desktop  :
 
